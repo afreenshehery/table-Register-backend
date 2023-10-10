@@ -19,7 +19,7 @@ app.use(function (req, res, next) {
 
 // app.use(express.static(path.join(__dirname, "dist")));
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 let server = app.listen(port, () => {
   console.log("App is listing at port  :" + port);
 });
